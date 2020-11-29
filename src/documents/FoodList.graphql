@@ -1,0 +1,13 @@
+query FoodList($categoryId: Int){
+    foods (
+      where: {category_id: {_eq: $categoryId}}
+    ) {
+      id
+      name
+      price
+      category {
+        id
+        name
+      }
+    }
+}

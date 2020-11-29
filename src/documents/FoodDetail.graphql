@@ -1,0 +1,8 @@
+query FoodDetail($id: Int){
+    foods(
+        where: {id: {_eq: $id}}
+    ) {
+        name
+        price
+    }
+}

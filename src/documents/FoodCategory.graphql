@@ -1,0 +1,6 @@
+query FoodCategory {
+    category {
+        id
+        name
+    }
+}
